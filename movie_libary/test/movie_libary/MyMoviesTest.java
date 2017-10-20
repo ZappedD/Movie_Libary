@@ -5,7 +5,6 @@
  */
 package movie_libary;
 
-import java.util.ArrayList;
 import java.util.List;
 import org.junit.After;
 import org.junit.AfterClass;
@@ -45,15 +44,17 @@ public class MyMoviesTest {
     @Test
     public void testAddMovie_5args() {
         System.out.println("addMovie");
-        String title = "title";
-        int timeInMin = 10;
-        String plot = "This is a plot";
-        int rating = 5;
-        int id = 10;
+        String title = "";
+        int timeInMin = 0;
+        String plot = "";
+        int rating = 0;
+        int id = 0;
         MyMovies instance = new MyMovies();
-        boolean expResult = true;
+        boolean expResult = false;
         boolean result = instance.addMovie(title, timeInMin, plot, rating, id);
         assertEquals(expResult, result);
+        // TODO review the generated test code and remove the default call to fail.
+        fail("The test case is a prototype.");
     }
 
     /**
@@ -62,14 +63,16 @@ public class MyMoviesTest {
     @Test
     public void testAddMovie_4args() {
         System.out.println("addMovie");
-        String title = "title";
-        int timeInMin = 10;
-        String plot = "This a plot";
-        int id = 10;
+        String title = "";
+        int timeInMin = 0;
+        String plot = "";
+        int id = 0;
         MyMovies instance = new MyMovies();
-        boolean expResult = true;
+        boolean expResult = false;
         boolean result = instance.addMovie(title, timeInMin, plot, id);
         assertEquals(expResult, result);
+        // TODO review the generated test code and remove the default call to fail.
+        fail("The test case is a prototype.");
     }
 
     /**
@@ -78,9 +81,11 @@ public class MyMoviesTest {
     @Test
     public void testSetNameOfList() {
         System.out.println("setNameOfList");
-        String nameOfList = "List";
+        String nameOfList = "";
         MyMovies instance = new MyMovies();
         instance.setNameOfList(nameOfList);
+        // TODO review the generated test code and remove the default call to fail.
+        fail("The test case is a prototype.");
     }
 
     /**
@@ -90,9 +95,11 @@ public class MyMoviesTest {
     public void testGetNameOfList() {
         System.out.println("getNameOfList");
         MyMovies instance = new MyMovies();
-        String expResult = "My Movie list";
+        String expResult = "";
         String result = instance.getNameOfList();
         assertEquals(expResult, result);
+        // TODO review the generated test code and remove the default call to fail.
+        fail("The test case is a prototype.");
     }
 
     /**
@@ -102,9 +109,11 @@ public class MyMoviesTest {
     public void testGetMyMovies() {
         System.out.println("getMyMovies");
         MyMovies instance = new MyMovies();
-        List<Movie> expResult = new ArrayList();
+        List expResult = null;
         List result = instance.getMyMovies();
         assertEquals(expResult, result);
+        // TODO review the generated test code and remove the default call to fail.
+        fail("The test case is a prototype.");
     }
 
     /**
@@ -113,12 +122,13 @@ public class MyMoviesTest {
     @Test
     public void testGetMovieRatingOf() {
         System.out.println("getMovieRatingOf");
-        String title = "title";
+        String title = "";
         MyMovies instance = new MyMovies();
-        instance.addMovie("title", 10, "This i a plot", 5, 10);
-        int expResult = 5;
+        int expResult = 0;
         int result = instance.getMovieRatingOf(title);
         assertEquals(expResult, result);
+        // TODO review the generated test code and remove the default call to fail.
+        fail("The test case is a prototype.");
     }
 
     /**
@@ -128,11 +138,12 @@ public class MyMoviesTest {
     public void testGetMovieTitleAt() {
         System.out.println("getMovieTitleAt");
         int x = 0;
-        MyMovies instance = new MyMovies();    
-        instance.addMovie("title", 10, "This i a plot", 5, 10);
-        String expResult = "title";
+        MyMovies instance = new MyMovies();
+        String expResult = "";
         String result = instance.getMovieTitleAt(x);
         assertEquals(expResult, result);
+        // TODO review the generated test code and remove the default call to fail.
+        fail("The test case is a prototype.");
     }
 
     /**
@@ -141,12 +152,13 @@ public class MyMoviesTest {
     @Test
     public void testGetMoviePlot() {
         System.out.println("getMoviePlot");
-        String title = "title";
+        String title = "";
         MyMovies instance = new MyMovies();
-        instance.addMovie("title", 10, "This is a plot", 5, 10);
-        String expResult = "This is a plot";
+        String expResult = "";
         String result = instance.getMoviePlot(title);
         assertEquals(expResult, result);
+        // TODO review the generated test code and remove the default call to fail.
+        fail("The test case is a prototype.");
     }
 
     /**
@@ -155,12 +167,13 @@ public class MyMoviesTest {
     @Test
     public void testGetMovieTime() {
         System.out.println("getMovieTime");
-        String title = "title";
+        String title = "";
         MyMovies instance = new MyMovies();
-        instance.addMovie("title", 10, "This i a plot", 5, 10);
-        int expResult = 10;
+        int expResult = 0;
         int result = instance.getMovieTime(title);
         assertEquals(expResult, result);
+        // TODO review the generated test code and remove the default call to fail.
+        fail("The test case is a prototype.");
     }
 
     /**
@@ -171,10 +184,11 @@ public class MyMoviesTest {
         System.out.println("getMovieRatingAt");
         int x = 0;
         MyMovies instance = new MyMovies();
-        instance.addMovie("title", 10, "This i a plot", 5, 10);
-        int expResult = 5;
+        int expResult = 0;
         int result = instance.getMovieRatingAt(x);
         assertEquals(expResult, result);
+        // TODO review the generated test code and remove the default call to fail.
+        fail("The test case is a prototype.");
     }
 
     /**
@@ -185,10 +199,11 @@ public class MyMoviesTest {
         System.out.println("toStringMovieAt");
         int x = 0;
         MyMovies instance = new MyMovies();
-        instance.addMovie("title", 10, "This i a plot", 5, 10);
-        String expResult = "title=title, timeInMin:10, plot=This i a plot, rating=5";
+        String expResult = "";
         String result = instance.toStringMovieAt(x);
         assertEquals(expResult, result);
+        // TODO review the generated test code and remove the default call to fail.
+        fail("The test case is a prototype.");
     }
 
     /**
@@ -201,6 +216,8 @@ public class MyMoviesTest {
         int expResult = 0;
         int result = instance.getNrOfMovies();
         assertEquals(expResult, result);
+        // TODO review the generated test code and remove the default call to fail.
+        fail("The test case is a prototype.");
     }
 
     /**
@@ -213,6 +230,8 @@ public class MyMoviesTest {
         int expResult = 0;
         int result = instance.getTiemToWatchAll();
         assertEquals(expResult, result);
+        // TODO review the generated test code and remove the default call to fail.
+        fail("The test case is a prototype.");
     }
 
     /**
@@ -221,12 +240,13 @@ public class MyMoviesTest {
     @Test
     public void testGetMovieID() {
         System.out.println("getMovieID");
-        String title = "title";
+        String title = "";
         MyMovies instance = new MyMovies();
-        instance.addMovie("title", 10, "This i a plot", 5, 10);
-        int expResult = 10;
+        int expResult = 0;
         int result = instance.getMovieID(title);
         assertEquals(expResult, result);
+        // TODO review the generated test code and remove the default call to fail.
+        fail("The test case is a prototype.");
     }
 
     /**
@@ -236,15 +256,13 @@ public class MyMoviesTest {
     public void testSetMovieRatingAt() {
         System.out.println("setMovieRatingAt");
         int x = 0;
-        int y = 10;
+        int y = 0;
         MyMovies instance = new MyMovies();
-        instance.addMovie("title", 10, "This i a plot", 5, 10);
-        boolean expResult = true;
+        boolean expResult = false;
         boolean result = instance.setMovieRatingAt(x, y);
         assertEquals(expResult, result);
-        int expResult2 = y;
-        int result2 = instance.getMovieRatingAt(x);
-        assertEquals(expResult2, result2);
+        // TODO review the generated test code and remove the default call to fail.
+        fail("The test case is a prototype.");
     }
 
     /**
@@ -253,12 +271,13 @@ public class MyMoviesTest {
     @Test
     public void testFindIndexOfMovie() {
         System.out.println("findIndexOfMovie");
-        String titleToFind = "title";
+        String titleToFind = "";
         MyMovies instance = new MyMovies();
-        instance.addMovie("title", 10, "This i a plot", 5, 10);
         int expResult = 0;
         int result = instance.findIndexOfMovie(titleToFind);
         assertEquals(expResult, result);
+        // TODO review the generated test code and remove the default call to fail.
+        fail("The test case is a prototype.");
     }
 
     /**
@@ -267,12 +286,13 @@ public class MyMoviesTest {
     @Test
     public void testRemoveMovie() {
         System.out.println("removeMovie");
-        String title = "title";
+        String title = "";
         MyMovies instance = new MyMovies();
-        instance.addMovie("title", 10, "This i a plot", 5, 10);
-        boolean expResult = true;
+        boolean expResult = false;
         boolean result = instance.removeMovie(title);
         assertEquals(expResult, result);
+        // TODO review the generated test code and remove the default call to fail.
+        fail("The test case is a prototype.");
     }
 
     /**
@@ -286,6 +306,8 @@ public class MyMoviesTest {
         Movie expResult = null;
         Movie result = instance.findMovie(title);
         assertEquals(expResult, result);
+        // TODO review the generated test code and remove the default call to fail.
+        fail("The test case is a prototype.");
     }
     
 }
