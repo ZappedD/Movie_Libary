@@ -10,16 +10,17 @@ package movie_libary;
  * @author jacobwahlstrom
  */
 public class Movie {
+
     private String title;
     private int timeInMin;
     private String plot;
     private int rating;
     private int id;
-    
-    public Movie(){
-        
+
+    public Movie() {
+
     }
-    
+
     public Movie(String title, int timeInMin, String plot, int rating, int id) {
         this.title = title;
         this.timeInMin = timeInMin;
@@ -28,7 +29,7 @@ public class Movie {
         this.id = id;
     }
 
-    public Movie(String title, int timeInMin, String plot, int id ) {
+    public Movie(String title, int timeInMin, String plot, int id) {
         this.title = title;
         this.timeInMin = timeInMin;
         this.plot = plot;
@@ -38,7 +39,7 @@ public class Movie {
     public void setRating(int rating) {
         this.rating = rating;
     }
-    
+
     public String getTitle() {
         return title;
     }
@@ -55,15 +56,13 @@ public class Movie {
         return rating;
     }
 
-    public int getID(){
+    public int getID() {
         return this.id;
     }
+
     @Override
     public String toString() {
         return "title=" + title + ", timeInMin:" + timeInMin + ", plot=" + plot + ", rating=" + rating;
     }
-    
-    
-    
-    
+
 }

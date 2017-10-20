@@ -14,7 +14,8 @@ import java.sql.SQLException;
  * @author jacobwahlstrom
  */
 public class ConnectionFactory {
-       public static Connection getConnection() throws SQLException{
+
+    public static Connection getConnection() throws SQLException {
         String url = "jdbc:mysql://localhost/datamovies";
         String user = "root";
         String password = "";
