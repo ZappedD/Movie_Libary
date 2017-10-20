@@ -53,7 +53,7 @@ public class Movie {
     }
 
     public int getRating() {
-        return rating;
+        return this.rating;
     }
 
     public int getID() {
