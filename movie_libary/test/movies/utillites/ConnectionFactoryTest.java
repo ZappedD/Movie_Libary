@@ -3,8 +3,9 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package movie_libary;
+package movies.utillites;
 
+import com.mysql.jdbc.Connection;
 import org.junit.After;
 import org.junit.AfterClass;
 import org.junit.Before;
@@ -16,9 +17,9 @@ import static org.junit.Assert.*;
  *
  * @author Jacob
  */
-public class MyMoviesUITest {
+public class ConnectionFactoryTest {
     
-    public MyMoviesUITest() {
+    public ConnectionFactoryTest() {
     }
     
     @BeforeClass
@@ -38,23 +39,14 @@ public class MyMoviesUITest {
     }
 
     /**
-     * Test of main method, of class MyMoviesUI.
+     * Test of getConnection method, of class ConnectionFactory.
      */
-    @Test
-    public void testMain() {
-        System.out.println("main");
-        String[] args = null;
-        MyMoviesUI.main(args);
-    }
-
-    /**
-     * Test of updateMyMovies method, of class MyMoviesUI.
-     */
-    @Test
-    public void testUpdateMyMovies() {
-        System.out.println("updateMyMovies");
-        MyMoviesUI instance = new MyMoviesUI();
-        instance.updateMyMovies();
-    }
+//    @Test
+//    public void testGetConnection() throws Exception {
+//        System.out.println("getConnection");
+//        Connection expResult = null;
+//        Connection result = ConnectionFactory.getConnection();
+//        assertEquals(expResult, result);
+//    }
     
 }
