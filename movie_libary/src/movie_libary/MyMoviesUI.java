@@ -73,6 +73,8 @@ public class MyMoviesUI extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
+        jTabbedPaneMain.setBackground(new java.awt.Color(230, 239, 233));
+
         jPanel1.setBackground(new java.awt.Color(230, 239, 233));
         jPanel1.setForeground(new java.awt.Color(51, 51, 51));
 
@@ -84,8 +86,10 @@ public class MyMoviesUI extends javax.swing.JFrame {
             }
         });
 
+        jLabelSearch.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jLabelSearch.setText("Search");
 
+        jBtnRemoveMovie.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jBtnRemoveMovie.setText("Remove Movie");
         jBtnRemoveMovie.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mousePressed(java.awt.event.MouseEvent evt) {
@@ -117,9 +121,11 @@ public class MyMoviesUI extends javax.swing.JFrame {
                 .addContainerGap())
         );
 
+        jLabel3.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jLabel3.setText("My Movie List");
 
         jListMovies.setBackground(new java.awt.Color(230, 239, 233));
+        jListMovies.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jListMovies.setModel(new javax.swing.AbstractListModel<String>() {
             String[] strings = { "Item 1", "Item 2", "Item 3", "Item 4", "Item 5" };
             public int getSize() { return strings.length; }
@@ -136,6 +142,7 @@ public class MyMoviesUI extends javax.swing.JFrame {
         jTextMPlot.setEditable(false);
         jTextMPlot.setBackground(new java.awt.Color(230, 239, 233));
         jTextMPlot.setColumns(20);
+        jTextMPlot.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jTextMPlot.setLineWrap(true);
         jTextMPlot.setRows(5);
         jTextMPlot.setWrapStyleWord(true);
@@ -144,11 +151,14 @@ public class MyMoviesUI extends javax.swing.JFrame {
         jScrollPane6.setViewportView(jTextMPlot);
 
         jLabel2.setBackground(new java.awt.Color(0, 0, 0));
+        jLabel2.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jLabel2.setText("Plot");
 
         jLPlaytime.setBackground(new java.awt.Color(0, 0, 0));
+        jLPlaytime.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jLPlaytime.setText("Time");
 
+        jLRating.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jLRating.setText("Rating");
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
@@ -158,16 +168,14 @@ public class MyMoviesUI extends javax.swing.JFrame {
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addComponent(jPanel7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addComponent(jPanel7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(jPanel1Layout.createSequentialGroup()
                                 .addGap(10, 10, 10)
                                 .addComponent(jLabel3))
                             .addComponent(jScrollPane4, javax.swing.GroupLayout.PREFERRED_SIZE, 352, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 42, Short.MAX_VALUE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(jPanel1Layout.createSequentialGroup()
                                 .addComponent(jLabel2)
@@ -175,8 +183,8 @@ public class MyMoviesUI extends javax.swing.JFrame {
                                 .addComponent(jLPlaytime, javax.swing.GroupLayout.PREFERRED_SIZE, 61, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addGap(18, 18, 18)
                                 .addComponent(jLRating))
-                            .addComponent(jScrollPane6, javax.swing.GroupLayout.PREFERRED_SIZE, 265, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(34, 34, 34))))
+                            .addComponent(jScrollPane6, javax.swing.GroupLayout.PREFERRED_SIZE, 354, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                .addContainerGap(141, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -193,15 +201,22 @@ public class MyMoviesUI extends javax.swing.JFrame {
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addComponent(jScrollPane6)
                     .addComponent(jScrollPane4, javax.swing.GroupLayout.DEFAULT_SIZE, 216, Short.MAX_VALUE))
-                .addContainerGap(99, Short.MAX_VALUE))
+                .addContainerGap(94, Short.MAX_VALUE))
         );
 
         jTabbedPaneMain.addTab("View movies", jPanel1);
 
+        jPanel2.setBackground(new java.awt.Color(230, 239, 233));
+
+        jPanel3.setBackground(new java.awt.Color(230, 239, 233));
+
+        jTtpMoviePlot.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jScrollPane2.setViewportView(jTtpMoviePlot);
 
+        jLabelPlot.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jLabelPlot.setText("Plot");
 
+        jBtnAddMovie.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jBtnAddMovie.setText("Add Move");
         jBtnAddMovie.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -209,8 +224,12 @@ public class MyMoviesUI extends javax.swing.JFrame {
             }
         });
 
+        jPanel6.setBackground(new java.awt.Color(230, 239, 233));
+
+        jSpinnerMovieRating.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jSpinnerMovieRating.setModel(new javax.swing.SpinnerNumberModel(0, 0, 10, 1));
 
+        jLabel1.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jLabel1.setText("Rating");
 
         javax.swing.GroupLayout jPanel6Layout = new javax.swing.GroupLayout(jPanel6);
@@ -240,7 +259,7 @@ public class MyMoviesUI extends javax.swing.JFrame {
                 .addContainerGap()
                 .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel3Layout.createSequentialGroup()
-                        .addComponent(jLabelPlot, javax.swing.GroupLayout.DEFAULT_SIZE, 352, Short.MAX_VALUE)
+                        .addComponent(jLabelPlot, javax.swing.GroupLayout.DEFAULT_SIZE, 516, Short.MAX_VALUE)
                         .addGap(187, 187, 187))
                     .addComponent(jScrollPane2, javax.swing.GroupLayout.Alignment.TRAILING)
                     .addGroup(jPanel3Layout.createSequentialGroup()
@@ -266,8 +285,12 @@ public class MyMoviesUI extends javax.swing.JFrame {
                 .addContainerGap())
         );
 
+        jPanel4.setBackground(new java.awt.Color(230, 239, 233));
+
+        jLabelTitle.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jLabelTitle.setText("Title");
 
+        jTtpAddTitle.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jScrollPane1.setViewportView(jTtpAddTitle);
 
         javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
@@ -278,7 +301,7 @@ public class MyMoviesUI extends javax.swing.JFrame {
                 .addContainerGap()
                 .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel4Layout.createSequentialGroup()
-                        .addComponent(jLabelTitle, javax.swing.GroupLayout.DEFAULT_SIZE, 126, Short.MAX_VALUE)
+                        .addComponent(jLabelTitle, javax.swing.GroupLayout.DEFAULT_SIZE, 208, Short.MAX_VALUE)
                         .addGap(181, 181, 181))
                     .addComponent(jScrollPane1))
                 .addContainerGap())
@@ -293,8 +316,13 @@ public class MyMoviesUI extends javax.swing.JFrame {
                 .addContainerGap())
         );
 
+        jPanel5.setBackground(new java.awt.Color(230, 239, 233));
+
+        jLabelTime.setBackground(new java.awt.Color(230, 239, 233));
+        jLabelTime.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jLabelTime.setText("Time / Duration");
 
+        jTtpMovieTime.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jScrollPane3.setViewportView(jTtpMovieTime);
 
         javax.swing.GroupLayout jPanel5Layout = new javax.swing.GroupLayout(jPanel5);
@@ -307,7 +335,7 @@ public class MyMoviesUI extends javax.swing.JFrame {
                     .addComponent(jScrollPane3, javax.swing.GroupLayout.Alignment.TRAILING)
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel5Layout.createSequentialGroup()
                         .addGap(28, 28, 28)
-                        .addComponent(jLabelTime, javax.swing.GroupLayout.DEFAULT_SIZE, 178, Short.MAX_VALUE)))
+                        .addComponent(jLabelTime, javax.swing.GroupLayout.DEFAULT_SIZE, 260, Short.MAX_VALUE)))
                 .addContainerGap())
         );
         jPanel5Layout.setVerticalGroup(
@@ -320,12 +348,14 @@ public class MyMoviesUI extends javax.swing.JFrame {
                 .addContainerGap())
         );
 
+        jTtFLink.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jTtFLink.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jTtFLinkActionPerformed(evt);
             }
         });
 
+        jBIMDb.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jBIMDb.setText("Get movie from IMDb");
         jBIMDb.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mousePressed(java.awt.event.MouseEvent evt) {
@@ -409,6 +439,9 @@ public class MyMoviesUI extends javax.swing.JFrame {
 
             try {
                 productBean.postMovie(title, plot, time, rating);
+                updateMyMovies();        
+                jTabbedPaneMain.setSelectedIndex(0);
+
             } catch (SQLException ex) {
                 Logger.getLogger(MyMoviesUI.class.getName()).log(Level.SEVERE, null, ex);
             }

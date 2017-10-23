@@ -71,14 +71,19 @@ public class ProductBean {
                 title = title.substring(0, index);
             }
 
-            int timeInH = 0;
+            int timeInH = 1;
             int timeInMin = 0;
-            String timeInString = imdbDoc.select("item[itemprop='duration']").html();
+            String timeInString = imdbDoc.select("time[itemprop='duration']").html();
             if (timeInString.contains("h")) {
                 timeInH = Integer.parseInt((timeInString.substring(0, timeInString.indexOf("h"))));
-                timeInMin = Integer.parseInt((timeInString.substring(3, timeInString.indexOf("m"))));
-
+                timeInMin = Integer.parseInt((timeInString.substring(timeInString.indexOf("h")+2, timeInString.indexOf("m"))));
+                timeInMin = timeInMin + (timeInH *60);
             }
+            else{
+                timeInMin = timeInH * 60;
+                System.out.println(timeInString);
+            }
+                
             String plot = imdbDoc.select("div .summary_text").html();
 
             int rating = 5;
