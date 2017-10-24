@@ -10,7 +10,6 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.swing.DefaultListModel;
 import javax.swing.JOptionPane;
-import javax.swing.text.StyledDocument;
 import movies.beans.*;
 
 /**
@@ -514,8 +513,8 @@ public class MyMoviesUI extends javax.swing.JFrame {
 
         String title = jListMovies.getSelectedValue();
         String plot = myMovies.getMoviePlot(title);
-        if (plot != "Not found") {
-
+        if (plot == "Not found") {
+            JOptionPane.showMessageDialog(rootPane, "Some thing happend, what did you do? How did we come to this?");
         }
         int time = myMovies.getMovieTime(title);
         int rating = myMovies.getMovieRatingOf(title);
